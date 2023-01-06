@@ -45,6 +45,8 @@ pipeline {
                 sh "docker rmi ${IMAGE_NAME}:latest"
             }
         }
+    }
+}
 //         stage('Updating Kubernetes deployment file'){
 //             steps {
 //                 sh "cat deployment.yml"
