@@ -7,6 +7,7 @@ pipeline {
         IMAGE_NAME = "${DOCKERHUB_USERNAME}" + "/" + "${APP_NAME}"
         REGISTRY_CREDS = 'dockerhub'
         }
+    
     stages {
         stage('Cleanup Workspace'){
             steps {
