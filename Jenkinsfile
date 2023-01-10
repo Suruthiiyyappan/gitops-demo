@@ -26,6 +26,7 @@ pipeline {
         stage('Build Docker Image'){
             steps {
                 script{
+                    sh 'whoami'
                     docker_image = docker.build "${IMAGE_NAME}"
                 }
             }
