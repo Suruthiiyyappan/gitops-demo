@@ -23,7 +23,7 @@ pipeline {
                 branch: 'master'
             }
         }
-        stage('Build Docker Image'){
+        stage('Build Docker Images'){
             steps {
                 script{
                     sh 'whoami'
